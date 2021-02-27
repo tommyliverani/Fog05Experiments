@@ -1,0 +1,23 @@
+{
+    "id": "hello-world-docker",
+    "name": "hello-world",
+    "computation_requirements": {
+        "cpu_arch": "x86_64",
+        "cpu_min_freq": 0,
+        "cpu_min_count": 1,
+        "ram_size_mb": 2048.0,
+        "storage_size_gb": 10
+    },
+    "image" : {
+	"uri": "file:///var/lib/libvirt/images/ubuntu16.04-clone.qcow2",
+	"checksum": "b500018f1cdd9eeaf6f5a787a6dfc1abc5409f851338484ba21e40956ac768a4",
+	"format": "qcow2"
+    },
+    "storage": [],
+    "hypervisor": "KVM",
+    "migration_kind": "COLD",
+    "interfaces": [],
+    "io_ports": [],
+    "connection_points": [],
+    "depends_on": []
+}
