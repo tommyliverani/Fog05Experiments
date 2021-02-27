@@ -23,7 +23,7 @@ while True:
 	print(cpu_usage)
 """
 
-
+"""
 while True:
 	time.sleep(1)
 	os.system('vmstat > tmp.txt')
@@ -31,16 +31,33 @@ while True:
 	line= f.readline()
 	line= f.readline()
 	line= f.readline()
-	cpu_usage=100-float(line.split()[14])
-	ram_usage=4028776-float(line.split()[3])
+	f.close()
+	cpu_usage=int(line.split()[14])
+	ram_usage=4028776-int(line.split()[3])
 	vm_usage=float(line.split()[16])
 	out = open("out.csv", "a")
 	writer=csv.writer(out)
-	line=[]
-	line.append(datetime.datetime.now())
-	line.append(cpu_usage)
-	line.append(ram_usage)
-	line.append(vm_usage)
-	writer.writerow(line)
+	row=[]
+	row.append(datetime.datetime.now())
+	row.append(cpu_usage)
+	row.append(ram_usage)
+	row.append(vm_usage)
+	writer.writerow(row)
 	out.close()
-	print('{} | {} | {} |{}'.format(datetime.datetime.now(),cpu_usage,ram_usage,vm_usage))
+	print(line.split())
+	#print('{} | {} | {} |{}'.format(datetime.datetime.now(),cpu_usage,ram_usage,vm_usage))
+
+"""
+
+
+while True:
+	time.sleep(1)
+	out = open("time.csv", "a")
+	writer=csv.writer(out)
+	row=[]
+	row.append(datetime.datetime.now())
+	writer.writerow(row)
+	print(datetime.datetime.now())
+	out.close()
+
+
