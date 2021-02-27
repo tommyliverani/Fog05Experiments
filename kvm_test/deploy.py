@@ -30,6 +30,8 @@ print('start at {}'.format(datetime.datetime.now()))
 api.fdu.start(inst_info.get_uuid(), "MYENV=Hello World!")
 print('started at {}'.format(datetime.datetime.now()))
 
+time.sleep(3)
+
 print('migrate at {}'.format(datetime.datetime.now()))
 api.fdu.migrate(inst_info.get_uuid(),n2)
 print('migrated at {}'.format(datetime.datetime.now()))
