@@ -1,0 +1,11 @@
+Press enter to load the descriptor
+Press enter to define
+instantiate at 2021-03-01 02:14:12.779393
+fdu_id: ab6743a4-7663-474b-a9e5-219a98fd1548
+instantiated at 2021-03-01 02:14:14.354885
+Press enter to start
+start at 2021-03-01 02:14:17.294951
+Press enter to terminate
+migrate at 2021-03-01 02:14:53.886761
+migrated at 2021-03-01 02:14:59.963742
+
