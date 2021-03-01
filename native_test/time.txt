@@ -1,0 +1,16 @@
+Press enter to load the descriptor
+Press enter to define
+instantiate at 2021-03-01 00:59:41.690143
+fdu_id: 4094fb1c-cf8d-45f8-bf56-2d60797f2fca
+instantiated at 2021-03-01 00:59:42.819966
+Press enter to start
+start at 2021-03-01 00:59:48.468961
+Press enter to checkpoint
+deploy checkpoint at 2021-03-01 01:00:20.903884
+fdu_id: 904a1132-88e6-4d52-8e7e-a19eea13c51b
+end checkpoint at 2021-03-01 01:00:22.131393
+Press enter to restore
+deploy restore at 2021-03-01 01:00:44.264140
+fdu_id: 28aa53ea-cb64-4151-b8d2-15a7407ee9be
+end restore at 2021-03-01 01:00:45.726269
+FDU Output:
